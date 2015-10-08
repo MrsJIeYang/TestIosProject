@@ -111,16 +111,16 @@ project_path=$(pwd)
 echo "project path: $project_path"
 
 #build文件夹路径
-build_path=${project_path}/${build_app}/build
+build_path=${project_path}/build
 compiled_path=${build_path}
 
 #xcode MedicalRecordsFolder clean
-cd "${project_path}/${build_app}/"
+cd "${project_path}"
 xcodebuild clean || exit 1
 
-customized_clean_cmd="sh ${project_path}/${build_app}/NTipa_Build_Clean_Customized.sh ${project_path}"
-echo "EXEC: ${customized_clean_cmd}"
-${customized_clean_cmd} || exit 1
+#customized_clean_cmd="sh ${project_path}/${build_app}/NTipa_Build_Clean_Customized.sh ${project_path}"
+#echo "EXEC: ${customized_clean_cmd}"
+#${customized_clean_cmd} || exit 1
 
 cd "$project_path"
 
