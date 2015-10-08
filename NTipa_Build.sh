@@ -116,7 +116,7 @@ compiled_path=${build_path}
 
 #xcode MedicalRecordsFolder clean
 cd "${project_path}"
-#xcodebuild clean || exit 1
+xcodebuild clean || exit 1
 
 #customized_clean_cmd="sh ${project_path}/${build_app}/NTipa_Build_Clean_Customized.sh ${project_path}"
 #echo "EXEC: ${customized_clean_cmd}"
