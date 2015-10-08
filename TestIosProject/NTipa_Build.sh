@@ -15,9 +15,10 @@
 #			-s NAME				对应workspace下需要编译的scheme
 #			-n					编译前是否先clean工程
 #---------------------------------------------
-
+echo "Test one..."
 if [$# -lt 1]; then
 	echo "Error! "
+echo "Test two..."
 echo " 参数1: -o（必须 output）"
 echo "****************************************************************"
 echo "                     输入工程绝对路径                        	  "
