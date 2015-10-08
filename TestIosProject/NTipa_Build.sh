@@ -124,7 +124,7 @@ ${customized_clean_cmd} || exit 1
 
 cd "$project_path"
 
-echo ======= clean success==========
+echo "======= clean success=========="
 
 #组合编译命令
 build_cmd='xcodebuild'
