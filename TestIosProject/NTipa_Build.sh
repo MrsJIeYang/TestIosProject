@@ -82,14 +82,14 @@ while getopts "$param_pattern" opt; do
             ;;
         "a")
             build_app=$OPTARG
-            if [ "$build_app" = "TestIosProject"]; then
-            	if [ "$build_config" = "Release" ]; then
-            		certificate="iPhone Distribution: Shanghai TianMengYunHe Investment Center(Limited Partnership) (JHP8B47P62)" 
-            		profile_name="LifeAdhoc"
-            	else
-            		certificate="iPhone Developer: Xu Deliang (9W673N38DR)" 
-            		profile_name="LifeDev"
-            	fi
+            if [  "$build_app" = "TestIosProject" ];then
+                if [ "$build_config" = "Release" ];then
+                    certificate="iPhone Distribution: Shanghai TianMengYunHe Investment Center(Limited Partnership) (JHP8B47P62)"
+                    profile_name="LifeAdhoc"
+                else
+                    certificate="iPhone Developer: Xu Deliang (9W673N38DR)"
+                    profile_name="LifeDev"
+                fi
 			else
 				echo "Error!"
 				exit
